@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useAuth } from "../context/AuthContext";
+import { useAuth } from "../context/Authcontext";
 import { useVoice, LANGUAGES } from "../utils/useVoice";
 import { downloadAnalysisPDF } from "../utils/downloadPDF";
 import DoctorRecommendation from "../components/DoctorRecommendation";
