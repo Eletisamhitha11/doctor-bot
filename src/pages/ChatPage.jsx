@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/Authcontext";
 import { useVoice, LANGUAGES } from "../utils/usevoice";
-import { downloadAnalysisPDF } from "../utils/downloadPDF";
+import { downloadAnalysisPDF } from "../utils/downloadpdf";
 import DoctorRecommendation from "../components/DoctorRecommendation";
 import { CHAT_URL } from "../utils/api";
 
