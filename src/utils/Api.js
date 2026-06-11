@@ -3,6 +3,6 @@
 const API_BASE = import.meta.env.VITE_API_BASE || "";
 
 export const CHAT_URL = `${API_BASE}/.netlify/functions/chat`;
-export const DOCTOR_URL = `${API_BASE}/.netlify/functions/recommend-doctor`;
+export const DOCTOR_URL = `${API_BASE}/.netlify/functions/recommenddoctor`;
 
 export default API_BASE;
