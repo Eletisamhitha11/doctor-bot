@@ -2,7 +2,7 @@ import { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/Authcontext";
 import { useVoice, LANGUAGES } from "../utils/usevoice";
 import { downloadAnalysisPDF } from "../utils/downloadpdf";
-import DoctorRecommendation from "../components/DoctorRecommendation";
+import DoctorRecommendation from "../components/Doctorrecommendation";
 import { CHAT_URL } from "../utils/api";
 
 const WELCOME    = "👋 Hello! I'm DoctorBot AI. Describe your symptoms, ask about medicines, upload a report or image, or use Doctor Finder. How can I help you today?";
