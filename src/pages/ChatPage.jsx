@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { useAuth } from "../context/Authcontext";
-import { useVoice, LANGUAGES } from "../utils/useVoice";
+import { useVoice, LANGUAGES } from "../utils/usevoice";
 import { downloadAnalysisPDF } from "../utils/downloadPDF";
 import DoctorRecommendation from "../components/DoctorRecommendation";
 import { CHAT_URL } from "../utils/api";
