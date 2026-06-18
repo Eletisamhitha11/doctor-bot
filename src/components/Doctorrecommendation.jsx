@@ -17,7 +17,7 @@ export default function DoctorRecommendation({ language = "English" }) {
     setError("");
     setResult(null);
     try {
-      const r = await fetch(`${API_BASE}/recommend-doctor`, {
+      const r = await fetch(`${API_BASE}/.netlify/functions/recommenddoctor`,  {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ symptoms, location, language }),
