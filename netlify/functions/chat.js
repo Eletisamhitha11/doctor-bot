@@ -22,12 +22,12 @@ async function withRetry(fn, attempts = 3) {
 async function callGemini({ prompt, fileType, fileDataUrl }) {
   const apiKey = process.env.GEMINI_API_KEY;
 
-  if (!apiKey || !apiKey.startsWith("AIza")) {
-    throw new Error(
-      "Invalid or missing GEMINI_API_KEY. " +
-      "Get a free key at https://aistudio.google.com/apikey — it must start with 'AIza'."
-    );
-  }
+  if (!apiKey || !(apiKey.startsWith("AIza") || apiKey.startsWith("AQ."))) {
+  throw new Error(
+    "Invalid or missing GEMINI_API_KEY. " +
+    "Get a free key at https://aistudio.google.com/apikey — it should start with 'AIza' or 'AQ.'."
+  );
+}
 
   const parts = [];
   if (fileDataUrl) {
